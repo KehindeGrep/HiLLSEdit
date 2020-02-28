@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hills="http://www.webfst.fst-usttb-edu.ml/hills" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_yHj4MFgVEeqB9c4lb3eMZA" type="Hills" name="default.dhills" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_yHj4MVgVEeqB9c4lb3eMZA"/>
+  <element xmi:type="hills:HSpecification" href="default.hills#/"/>
+</notation:Diagram>

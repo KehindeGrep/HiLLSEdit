@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hills:HSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hills="http://www.webfst.fst-usttb-edu.ml/hills">
+  <composants xsi:type="hills:HSystem" ntime="Train">
+    <ports pname="Outϵ{Approach, Exit}"/>
+    <configurations xsi:type="hills:FiniteConfiguration" libelle="Approaching">
+      <SojTime stime="5.8"/>
+    </configurations>
+    <configurations xsi:type="hills:InitialConfiguration"/>
+    <configurations xsi:type="hills:FiniteConfiguration" libelle="Before_Crossing">
+      <SojTime stime="8.6"/>
+    </configurations>
+    <configurations xsi:type="hills:FiniteConfiguration" libelle="Moving_Away">
+      <SojTime stime="Random (200.0, 300.0)"/>
+    </configurations>
+    <configurations xsi:type="hills:FiniteConfiguration" libelle="After_Crossing">
+      <SojTime stime="2.0"/>
+    </configurations>
+    <configurations xsi:type="hills:FiniteConfiguration" libelle="Crossing">
+      <SojTime stime="5.2"/>
+    </configurations>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.1" target="//@composants.0/@configurations.0"/>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.0" target="//@composants.0/@configurations.2" itname="Out!Approach"/>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.2" target="//@composants.0/@configurations.5"/>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.4" target="//@composants.0/@configurations.3" itname="Out!Exit"/>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.5" target="//@composants.0/@configurations.4"/>
+    <transitions xsi:type="hills:InternalTransition" source="//@composants.0/@configurations.3" target="//@composants.0/@configurations.0"/>
+  </composants>
+</hills:HSpecification>
